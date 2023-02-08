@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/itemHoras_horas"
+        app:layout_constraintStart_toEndOf="@+id/itemHoras_horas">
+
+        <TextView
+            android:id="@+id/itemHoras_numHora"
+            android:layout_width="59dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="1dp"
+            android:text="nº"
+            app:layout_constraintBaseline_toBaselineOf="@+id/itemHoras_horas"
+            app:layout_constraintEnd_toStartOf="@+id/itemHoras_horas"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/itemHoras_horas"
+            android:layout_width="73dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="1dp"
+            android:text="Horas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/itemHoras_Grupo"
+            app:layout_constraintStart_toEndOf="@+id/itemHoras_numHora"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemHoras_Grupo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Grupo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/itemHoras_aula"
+            app:layout_constraintStart_toEndOf="@+id/itemHoras_horas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemHoras_aula"
+            android:layout_width="87dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="1dp"
+            android:text="Aula"
+            app:layout_constraintBaseline_toBaselineOf="@+id/itemHoras_Grupo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/itemHoras_Grupo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
