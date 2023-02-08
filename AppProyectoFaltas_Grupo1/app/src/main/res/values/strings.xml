@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppProyectoFaltas_Grupo1</string>
+    <string name="creaFalta">Nueva Falta</string>
+    <string name="horarios">Horario</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guardiasProfe">Mis guardias</string>
+</resources>
