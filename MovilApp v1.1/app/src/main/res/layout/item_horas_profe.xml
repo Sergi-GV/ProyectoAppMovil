@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/itemHoras_horas"
+        app:layout_constraintStart_toEndOf="@+id/itemHoras_horas">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/itemHoras_horas"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="1dp"
+                android:text="hora"
+                app:layout_constraintBaseline_toBaselineOf="@+id/itemHoras_materia"
+                app:layout_constraintEnd_toStartOf="@+id/itemHoras_materia"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/itemHoras_materia"
+                android:layout_width="78dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="1dp"
+                android:text="Materia"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/itemHoras_Grupo"
+                app:layout_constraintStart_toEndOf="@+id/itemHoras_horas" />
+
+            <TextView
+                android:id="@+id/itemHoras_Grupo"
+                android:layout_width="109dp"
+                android:layout_height="52dp"
+                android:text="Grupo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/itemHoras_aula"
+                app:layout_constraintStart_toEndOf="@+id/itemHoras_materia" />
+
+            <TextView
+                android:id="@+id/itemHoras_aula"
+                android:layout_width="87dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="1dp"
+                android:text="Aula"
+                app:layout_constraintBaseline_toBaselineOf="@+id/itemHoras_Grupo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/itemHoras_Grupo" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

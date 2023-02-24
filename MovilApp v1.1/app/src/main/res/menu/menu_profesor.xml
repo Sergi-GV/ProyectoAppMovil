@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Horarios"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/horario" />
+    <item
+        android:id="@+id/CrearFalta"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/nuevaFalta" />
+    <item
+        android:id="@+id/Guardias"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/guardias" />
+</menu>
