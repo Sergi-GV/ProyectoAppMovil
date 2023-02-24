@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemHoras"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="@+id/itemHoras_horas"
+        app:layout_constraintStart_toEndOf="@+id/itemHoras_horas">
+
+        <TextView
+            android:id="@+id/itemHoras_horas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="1.3"
+            android:text="hora"
+            app:layout_constraintBaseline_toBaselineOf="@+id/itemHoras_materia"
+            app:layout_constraintEnd_toStartOf="@+id/itemHoras_dia"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/itemHoras_dia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="1.2"
+            android:text="dia"
+            app:layout_constraintBaseline_toBaselineOf="@+id/itemHoras_materia"
+            app:layout_constraintEnd_toStartOf="@+id/itemHoras_materia"
+            app:layout_constraintStart_toEndOf="@id/itemHoras_horas" />
+
+        <TextView
+            android:id="@+id/itemHoras_materia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="Materia"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/itemHoras_Grupo"
+            app:layout_constraintStart_toEndOf="@+id/itemHoras_dia"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemHoras_Grupo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="Grupo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/itemHoras_aula"
+            app:layout_constraintStart_toEndOf="@+id/itemHoras_materia"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemHoras_aula"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_weight="1"
+            android:text="Aula"
+            app:layout_constraintBaseline_toBaselineOf="@+id/itemHoras_Grupo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/itemHoras_Grupo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
