@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafico_navegacion"
+    app:startDestination="@id/fragmentGuardiasProfe">
+    <fragment
+        android:id="@+id/fragmentGuardiasProfe"
+        android:name="es.proyectofaltas.appmovilfaltas.vistas.FragmentGuardiasProfe"
+        android:label="Guardias Disponibles"
+        tools:layout="@layout/fragment_guardias_profe" />
+    <fragment
+        android:id="@+id/fragmentFalta"
+        android:name="es.proyectofaltas.appmovilfaltas.vistas.FragmentFalta"
+        android:label="Nueva Falta"
+        tools:layout="@layout/fragment_falta">
+        <action
+            android:id="@+id/action_fragmentFalta_to_fragmentHora"
+            app:destination="@id/fragmentHora" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHorarios"
+        android:name="es.proyectofaltas.appmovilfaltas.vistas.FragmentHorarios"
+        android:label="Tu Horario"
+        tools:layout="@layout/fragment_horarios" />
+    <fragment
+        android:id="@+id/fragmentHora"
+        android:name="es.proyectofaltas.appmovilfaltas.vistas.FragmentHora"
+        android:label="Nueva Falta"
+        tools:layout="@layout/fragment_hora">
+        <argument
+            android:name="aviso"
+            app:argType="es.proyectofaltas.appmovilfaltas.data.AvisoGuardia" />
+        <action
+            android:id="@+id/action_fragmentHora_to_fragmentFalta"
+            app:destination="@id/fragmentFalta" />
+    </fragment>
+</navigation>
