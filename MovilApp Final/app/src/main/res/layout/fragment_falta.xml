@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.FragmentFalta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <DatePicker
+            android:id="@+id/calendarioFalta"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"/>
+
+        <EditText
+            android:id="@+id/fFalta_motivo"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:hint="Motivo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/fFalta_Observaciones"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Observaciones"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/fFalta_btnContinuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="120dp"
+            android:text="Continuar" />
+
+    </LinearLayout>
+</FrameLayout>
